@@ -1,14 +1,23 @@
-En situaciones de luminosidad baja puede pasar que la cámara aparezca todo el tiempo en "learning" aunque el objeto ya está identificado.
+# Programas de Tracking de Objetos con Huskylens y Micro:bit
 
-1. microbit-Huskylens---Simple-Object-Tracking.hex
-	-Programa para analizar la posición del objeto entrenado y mostrar su posición en la matriz de píxeles de la microbit utilizando condicionales "if".
-2. microbit-Huskylens_SimpleObjectTracking-sounds.hex
-	-Mismo programa con sonidos para saber si estamos identificando el objeto o no más fácilmente.
-3. microbit-linear-object-tracking3.hex
-	-Programa con el mismo objetivo pero ahora realizamos un ajuste lineal, esto parece algo demasiado complejo para la microbit y funciona bastante mal.
-4. microbit-linear-object-tracking4.hex
-	-Ahora dividimos la posicion de la pantalla para pasarla a una coordenada de los pixeles de la microbit y no depender de la función del ajuste lineal.
-5. microbit-linear-object-tracking-5.hex
-	-Hemos quitado las variables para asignar al plot la lectura directamente, se nota que ahora el programa funciona mucho más rápido.
-6. microbit-linear-object-tracking-6.hex
-	-Hemos cambiado la division por una multiplicacion en decimal. No apreciamos mejoras importantes.
+En condiciones de baja luminosidad, puede suceder que la cámara permanezca constantemente en "learning" aunque el objeto ya esté identificado. A continuación, se detallan los programas de ejemplo desarrollados para mejorar el seguimiento de objetos con Huskylens y micro:bit.
+
+## Descripción de Programas
+
+1. **microbit-Huskylens---Simple-Object-Tracking.hex**  
+   Programa para analizar la posición del objeto entrenado y mostrar su ubicación en la matriz de píxeles de la micro:bit mediante condicionales "if".
+
+2. **microbit-Huskylens_SimpleObjectTracking-sounds.hex**  
+   Mismo programa anterior, pero incluye sonidos para facilitar la identificación del objeto cuando está correctamente detectado.
+
+3. **microbit-linear-object-tracking3.hex**  
+   Programa con el mismo objetivo, pero ahora utilizando un ajuste lineal. Sin embargo, este enfoque resulta complejo para la micro:bit y su desempeño es subóptimo.
+
+4. **microbit-linear-object-tracking4.hex**  
+   Este programa divide la posición de la pantalla en coordenadas que corresponden directamente a los píxeles de la micro:bit, eliminando la dependencia del ajuste lineal.
+
+5. **microbit-linear-object-tracking-5.hex**  
+   En esta versión, se eliminaron variables intermedias y se asignan directamente los valores al `plot`, lo cual mejora considerablemente la velocidad de ejecución del programa.
+
+6. **microbit-linear-object-tracking-6.hex**  
+   La división se reemplazó por una multiplicación en decimal. No se observaron mejoras significativas en el rendimiento.
