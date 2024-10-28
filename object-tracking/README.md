@@ -21,3 +21,19 @@ En condiciones de baja luminosidad, puede suceder que la cámara permanezca cons
 
 6. **microbit-linear-object-tracking-6.hex**  
    La división se reemplazó por una multiplicación en decimal. No se observaron mejoras significativas en el rendimiento.
+
+7. **microbit-seaShells2-jkd-version.hex**
+	Object recognition para girar izq(ID:1), girar der(ID:2), acelerar(ID:3)No contamos con object recognition en nuestra version de software de husky lens, hay que actualizar el firmware
+	
+8. **microbit-maqueen_tag_orders_music.hex**
+	Mismo programa pero enfocado a detctar april_tags 36, cuando esta detectando el tag identificado reproduce una alarma. El id:4 da maxima potencia a los motores, no utilizar.
+	
+
+	
+## Objetivos e ideas
+
+1. **Perseguir y explotar globos utilizando la plataforma maqueen-plus**
+	Lo entrenamos con un determinado globo y en el momento que queda entrenado debe moverse hasta localizar el globo, en ese momento se pone a perseguirlo hasta que lo toque con una aguja y lo explote por lo que volverá al punto de buscar objetivos.
+	
+	
+	
